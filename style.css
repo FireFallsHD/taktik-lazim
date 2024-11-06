@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3377a2;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+    color: #3377a2;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+main {
+    color: rgb(21, 21, 160);
+    padding: 20px;
+}
+
+section {
+background-color: rgb(217, 217, 27);
+ margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(69, 66, 66, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2ff00;
+    color: rgb(0, 0, 0);
+}
+
+/* Listeyi düz hale getirelim */
+ul.button-list {
+    list-style-type: none;  /* Liste işaretlerini kaldır */
+    padding: 0;
+    margin: 0;
+}
+
+/* Liste öğelerini butona benzetelim */
+ul.button-list li {
+    margin: 10px 0;
+}
+
+ul.button-list a {
+    display: inline-block;
+    background-color: #d3cd16; /* Buton rengi */
+    color: rgb(55, 0, 255); /* Yazı rengi */
+    padding: 10px 20px;
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    border-radius: 5px; /* Köşe yuvarlama */
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efekti */
+ul.button-list a:hover {
+    background-color: #f6ff00; /* Hoverda renk değişimi */
+}
+
+/* Focus efekti */
+ul.button-list a:focus {
+    outline: none; /* Focus'da kenarlık yok */
+    box-shadow: 0 0 10px rgba(0, 42, 255, 0.7); /* Focus'lı halde hafif ışık efekti */
+}
+
+/* Yanıp sönen animasyonu tanımlayalım */
+@keyframes blink-animation {
+    50% {
+        color: #3377a2;
+    }
+    100% {
+        color: #9a9735;  /* Sonra tekrar görünür */
+    }
+}
+
+/* Yanıp sönen metni uygulayalım */
+.blink {
+    animation: blink-animation 1s infinite; /* 1 saniyede bir yanıp söner, sonsuz döngüde */
+}
